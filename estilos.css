@@ -1,1 +1,69 @@
+body {
+  font-family: sans-serif;
+  background-color: #fffdf5;
+  color: #333;
+  padding: 2rem;
+}
 
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #3b3b3b;
+}
+
+.malla {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.ramo {
+  border-radius: 10px;
+  padding: 1rem;
+  width: 250px;
+  background-color: #f3f3dc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: 2px solid #ddd;
+  transition: transform 0.2s, opacity 0.3s;
+}
+
+.ramo:hover {
+  transform: scale(1.03);
+}
+
+.ramo h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.ramo p {
+  font-size: 0.9rem;
+  margin: 0.3rem 0;
+}
+
+.ramo button {
+  margin-top: 0.5rem;
+  padding: 0.4rem 0.6rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #ddd;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.ramo button:hover {
+  background-color: #ccc;
+}
+
+.ramo.aprobado {
+  background-color: #c8e6c9;
+  border-color: #81c784;
+}
+
+.ramo.bloqueado {
+  opacity: 0.5;
+  pointer-events: none;
+}
